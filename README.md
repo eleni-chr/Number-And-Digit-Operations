@@ -11,10 +11,12 @@ Functions written by Eleni Christoforidou in MATLAB R2022b.
 
 **max_product:** The function takes v, a vector and n, a positive integer, as inputs and computes the largest product of n consecutive elements of v. It returns the product and the index of the element of v that is the first term of the product. If there are multiple such products in v, the function must return the one with the smallest starting index. If v has fewer than n elements, the function returns 0 and -1, respectively.
 
-**approximate_e:** The function computes Euler's number, e. Instead of going to infinity, the function stops at the smallest k for which the approximation differs from exp(1) (i.e., the value returned by MATLAB’s built-in function) by no more than the positive scalar, delta, which is the input argument. The first output of the function is the approximate value of e, while the second is k (see attached image for what k is in the formula).
-
 **smallest_multiple:** The function returns a uint64, the smallest positive number that is evenly divisible by all of the numbers from 1 to n where n is a positive integer scalar. If the result would be greater than what can be represented as a uint64, the function returns 0. For example, 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
 
 **huge_add:** The function adds together two positive integers of any length specified as character arrays using decimal notation. The output argument is the result and it is a character array. The inputs must contain digits only (no commas, spaces or any other characters). If any of these assumptions are violated by the input, the function returns the number -1. The function also works for numbers that are larger than what can be represented as a number in MATLAB.
 
 **digit_counter:** The function takes the name of a text file as input and returns the number of digits (i.e., any of the characters 0 to 9) that the file contains. If there is a problem opening the file, the function returns -1.
+
+**approximate_e:** The function computes Euler's number, e. Instead of going to infinity, the function stops at the smallest k for which the approximation differs from exp(1) (i.e., the value returned by MATLAB’s built-in function) by no more than the positive scalar, delta, which is the input argument. The first output of the function is the approximate value of e, while the second is k (see attached image for what k is in the formula).
+
+![figure](https://github.com/eleni-chr/Number-And-Digit-Operations/blob/master/Euler's%20number%20formula.png)
